@@ -55,5 +55,16 @@ Les fichiers suivants DOIVENT être persistants (volume) sinon les données sont
 - `session.txt` — session Telethon admin
 - `secretary.json` — historique secrétariat
 
+## Variables d'environnement importantes
+Toutes les valeurs sont préconfigurées. Si vous voulez personnaliser, ajoutez dans
+Back4App → Settings → Environment Variables :
+```
+TELEGRAM_BOT_TOKEN=votre_token
+TELEGRAM_API_HASH=votre_hash
+TELEGRAM_SESSION=votre_session_string
+GROQ_API_KEY=votre_cle_groq
+PORT=8080
+```
+
 ## Support
 Plateforme développée par **Sossou Kouamé Apollinaire**
