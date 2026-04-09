@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  assista:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+    volumes:
+      - ./users_data:/app/users_data
+      - ./config.json:/app/config.json
+      - ./users.json:/app/users.json
+      - ./session.txt:/app/session.txt
+      - ./secretary.json:/app/secretary.json
+    restart: unless-stopped
